@@ -6,13 +6,13 @@ require_once "connect.php"
     <thead>
         <tr>
             <th scope="colspan">#</th>
-            <th scope="colspan">FIRST NAME</th>
-            <th scope="colspan">SECOND NAME</th>
-            <th scope="colspan">SURNAME</th>
-            <th scope="colspan">AGE</th>
-            <th scope="colspan">TEL.NUMBER</th>
-            <th scope="colspan">REG.NUMBER</th>
-            <th scope="colspan">GUARDIAN'S FULLNAME</th>
+            <th scope="colspan">firstName</th>
+            <th scope="colspan">secondName</th>
+            <th scope="colspan">surname</th>
+            <th scope="colspan">age</th>
+            <th scope="colspan">phonenumber</th>
+            <th scope="colspan">regnumber</th>
+            <th scope="colspan">guardian</th>
 </tr>
 <thead>
     <?php
@@ -23,14 +23,14 @@ require_once "connect.php"
         while($row=mysql_fetch_asssoc($result)){
             echo"
             <tr>
-            <td>",$row["FIRST NAME"],"</td>
-            <td>",$row["SECOND NAME"],"</td>
-            <td>",$row["SURNAME"],"</td>
-            <td>",$row["AGE"],"</td>
-            <td>",$row["TEL.NUMBER"],"</td>
-            <td>",$row["REG.NUMBER"],"</td>
-            <td>",$row["EMAIL ADDRESS"],"</td>
-            <td>",$row["GUARDIAN'S FULLNAME"],"</td>
+            <td>",$row["firstName"],"</td>
+            <td>",$row["secondName"],"</td>
+            <td>",$row["surname"],"</td>
+            <td>",$row["age"],"</td>
+            <td>",$row["phonenumber"],"</td>
+            <td>",$row["regnumber"],"</td>
+            <td>",$row["emailaddress"],"</td>
+            <td>",$row["guardian"],"</td>
 </tr>";
         };
     };
